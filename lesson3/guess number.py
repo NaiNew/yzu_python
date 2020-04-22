@@ -5,7 +5,7 @@ max = 100
 
 while True:
     guess = int(input('請輸入數字 %d ~ %d :' % (min, max)))
-    if guess < min or guess > max:
+    if guess <= min or guess >= max:
         print('請重新輸入')
         continue
     if guess == ans:
